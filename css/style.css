@@ -1,0 +1,266 @@
+/** ------------------------------------------------------- **/
+/**                  Root/Universal & HTML                  **/
+/** ------------------------------------------------------- **/
+:root {
+    box-sizing: border-box;
+    --heading-font: Helvetica, Arial, sans-serif;
+    --main-font: Georgia, sans-serif;
+    --text-color: white;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #038CFC;
+}
+
+/** ------------------------------------------------------- **/
+/**                 Header & Navigation                     **/
+/** ------------------------------------------------------- **/
+#title {
+    font-family: var(--heading-font);
+    color: #FC7303;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-toggle {
+    position: absolute;
+    top: -1.2em;
+    right: 0.1em;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 3em;
+    width: 1em;
+    height: 1em;
+    line-height: .4;
+    text-indent: 5em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* hamburger icon */
+.menu-toggle::after {
+    position: absolute;
+    top: .2em;
+    left: .2em;
+    display: block;
+    content: "\2261";
+    text-indent: 0;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+
+.menu-dropdown > ul {
+    list-style-type: none;
+}
+
+.menu.is-open .menu-dropdown {
+    display: block;
+}
+
+.nav-menu {
+    margin: 0;
+    padding-left: 0;
+    border: 1px solid #ccc;
+    list-style: none;
+}
+
+.nav-menu > li + li {
+    border-top: 1px solid #ccc;
+}
+
+.nav-menu > li > a {
+    display: block;
+    padding: .8em 1em;
+    background-color: #F003FC;
+    color: var(--text-color);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/** ------------------------------------------------------- **/
+/**                     Main Content                        **/
+/** ------------------------------------------------------- **/
+section, a {
+    font-family: var(--main-font);
+    color: var(--text-color);
+}
+
+h2, h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr::before, #known-examples > .row > .column > img, #getting-started > .row > img {
+    padding-top: 0.625em;
+}
+
+hr::after {
+    padding-bottom: 0.5em;
+}
+
+/** ------------------------------------------------------- **/
+/**                     Utility                             **/
+/** ------------------------------------------------------- **/
+.center {
+    display: block;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.break::before {
+    content: "";
+}
+
+/** ------------------------------------------------------- **/
+/**                     Footer                              **/
+/** ------------------------------------------------------- **/
+footer {
+    font-family: var(--main-font);
+    text-align: center;
+    color: var(--text-color);
+}
+
+.footer-col > ul {
+    list-style-type: none;
+}
+
+.footer-col > ul > li {
+    padding-bottom: 0.938em;
+}
+
+.footer-col > ul > li > a {
+    color: var(--text-color);
+}
+
+/** ------------------------------------------------------- **/
+/**                  Media Queries                          **/
+/** ------------------------------------------------------- **/
+/* Medium Screens */
+@media (min-width: 37.5em) { /* ~600px */
+    #title, h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-dropdown {
+        display: block;
+        position: static;
+    }
+
+    .nav-menu {
+        display: flex;
+        border: 0;
+    }
+
+    .nav-menu > li {
+        flex: 1;
+        font-size: 1.5rem;
+    }
+
+    .nav-menu > li + li {
+        border: 0;
+        margin-left: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.188rem;
+    }
+
+    p, li {
+        font-size: 1.125rem;
+    }
+
+    hr::after {
+        padding-bottom: 0.625em;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -.75em;
+        margin-right: -.75em;
+    }
+
+    .column {
+        flex: 1;
+        flex-basis: 50%;
+        padding: 0 0.938em 0.938em 0.938em;
+        flex-direction: column;
+        flex-flow: column wrap;
+    }
+
+    .footer-col, .footer-col > h3 {
+        text-align: left;
+    }
+
+    .footer-col > ul {
+        padding-left: 0;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 64em) { /* ~1024px */
+    #title, h2, h3 {
+        font-size: 1.875rem;
+    }
+
+    h3 {
+        font-size: 1.563rem;
+    }
+
+    p, li {
+        font-size: 1.25rem;
+    }
+
+    hr::before, #known-examples > .row > .column > img, #getting-started > .row > img {
+        padding-top: 1.25em;
+    }
+
+    hr::after {
+        padding-bottom: 1.25em;
+    }
+
+    .row {
+        margin-left: -1em;
+        margin-right: -1em;
+    }
+
+    .column {
+        flex-basis: 33.33%;
+        padding: 0 1em 1em 1em;
+    }
+}

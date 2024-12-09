@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>All About Progressive Web Applications</title>
+        <meta name="author" content="JH">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">All About Progressive Web Applications</h1>
+        </header>
+
+        <nav class="menu" id="main-menu">
+            <button class="menu-toggle" id="toggle-menu">Toggle Menu</button>
+            <div class="menu-dropdown">
+                <ul class="nav-menu txt-center">
+                    <li><a href="#pwas-features">PWAs & Features</a></li>
+                    <li><a href="#known-examples">Known Examples</a></li>
+                    <li><a href="#pros-and-cons">Pros & Cons</a></li>
+                    <li><a href="#getting-started">Getting Started</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <hr> <!-- divider -->
+
+            <!-- logo image -->
+            <img alt="All Progressive Web Applications logo" src="assets/logo.png" sizes="(max-width: 3500px) 3500px, (max-width: 800px) 800px, (max-width: 560px) 560px" 
+            srcset="assets/logo-small.png 560w, assets/logo-medium.png 800w, assets/logo.png 3500w">
+
+            <hr> <!-- divider -->
+
+            <section id="pwas-features" class="center">
+                <h2>PWAs & Their Features</h2>
+
+                <p>
+                    A PWA (Progressive Web App) is an app that’s built using web technologies (e.g. HTML, CSS, and JavaScript) and provides an experience and features 
+                    that mobile apps have. It can run on multiple platforms and devices and be installed directly on the device. With that, this brings a variety of 
+                    features for your website:
+                </p>
+
+                <div class="row">
+                    <div class="column">
+                        <p class="bold txt-center">Can operate while offline</p>
+                        <p>
+                            These apps work regardless if you’re offline or have unreliable/slow internet. With the help of service workers, data gets stored offline and 
+                            retrieved from the local cache.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bold txt-center">Using device features (e.g. Camera, GPS, or fingerprint scanner)</p>
+                        <p>Device features can enhance the user experience and make it seem like the PWA is a mobile app.</p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bold txt-center">Automatic updates</p>
+                        <p>
+                            The user doesn’t need to update the app like they do with apps on the Google Play Store or App Store. The instant implementation of changes 
+                            only requires uploading new files on the app's server. With that, the user will always have the latest version of the PWA.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bold txt-center">Usage of HTTPS protocol</p>
+                        <p>
+                            PWA requires the usage of the HTTPS protocol. However, this means the app is more secure with encrypted data and making it more difficult for 
+                            a hacker to change or decrypt. Plus, Google ranks apps and websites with HTTPS higher than those without it.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bold txt-center">Instant Loading Time</p>
+                        <p>
+                            PWAs were made to load quickly and efficiently for all users. This is also possible thanks to service workers who cache crucial resources 
+                            like HTML, CSS, and JavaScript files. So that when the user visits the site again, those files load from the cache instead of fetching copies 
+                            from the server.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bold txt-center">Push Notifications</p>
+                        <p>
+                            This helps keep users engaged, even if they don’t have the browser window open. These notifications can be sent based on the user’s behavior 
+                            or preferences and users can opt in or out of receiving them.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- divider -->
+            <hr>
+
+            <section id="known-examples" class="center">
+                <h2>Known Examples</h2>
+                <p>
+                    There are tons of PWAs, with categories like retail, news, social media, and traveling. Below are some of the well-known businesses that have PWAs for
+                    their user base and have succeeded with them.
+                </p>
+
+                <div class="row">
+                    <div class="column">
+                        <img alt="" src="assets/starbucks.png" sizes="(max-width: 1080px) 1080px, (max-width: 800px) 800px, (max-width: 560px) 560px" 
+                        srcset="assets/starbucks-small.png 560w, assets/starbucks-medium.png 800w, assets/starbucks.png 1080w">
+                        <p class="bold txt-center">Starbucks</p>
+                        <p>
+                            Starbucks made a PWA to boost user engagement by offering loyalty programs and an easier ordering process. 
+                            Other features include custom ordering, store availability, delivery details, and an app menu. You can also customize drinks like their 
+                            size, add-ons, and shot options. There’s also nutrition information, ingredients, and allergen sections.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <img alt="" src="assets/target.png" sizes="(max-width: 1080px) 1080px, (max-width: 800px) 800px, (max-width: 560px) 560px" 
+                        srcset="assets/target-small.png 560w, assets/target-medium.png 800w, assets/target.png 1080w">
+                        <p class="bold txt-center">Target</p>
+                        <p>
+                            Target saw users begin their experience on a mobile device before switching to a desktop to purchase. With that, they created a PWA, and 
+                            since then, it’s led to more users and transactions with features like add-to-cart and fast-loading images regardless of size.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <img alt="" src="assets/walmart.png" sizes="(max-width: 1080px) 1080px, (max-width: 800px) 800px, (max-width: 560px) 560px" 
+                        srcset="assets/walmart-small.png 560w, assets/walmart-medium.png 800w, assets/walmart.png 1080w">
+                        <p class="bold txt-center">Walmart</p>
+                        <p>
+                            Walmart’s PWA provides online purchases, pickup/delivery options, push notifications, and has a geo-tracking feature that monitors 
+                            best-selling items in the user’s area. With these features, Walmart can provide its customers with great deals and a smooth experience.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <img alt="" src="assets/washington-post.png" sizes="(max-width: 1080px) 1080px, (max-width: 800px) 800px, (max-width: 560px) 560px" 
+                        srcset="assets/washington-post-small.png 560w, assets/washington-post-medium.png 800w, assets/washington-post.png 1080w">
+                        <p class="bold txt-center">The Washington Post</p>
+                        <p>
+                            This PWA responds to concerns over slow loading times on the post’s old mobile app. With the improvement in load times, there’s been an 
+                            increase in retention rate and longer reading. This is also one of the most responsive PWAs out there with more than 1,000 articles published
+                            daily.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <img alt="" src="assets/weather-channel.png" sizes="(max-width: 1080px) 1080px, (max-width: 800px) 800px, (max-width: 560px) 560px" 
+                        srcset="assets/weather-channel-small.png 560w, assets/weather-channel-medium.png 800w, assets/weather-channel.png 1080w">
+                        <p class="bold txt-center">The Weather Channel</p>
+                        <p>
+                            The Weather Channel’s PWA helps users by providing 60+ languages, search functionality, push notifications, and provides for users who don’t 
+                            have reliable connections or advanced smartphones. There has also been an improvement in page loading speed through its app according to 
+                            Google.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <img alt="" src="assets/instagram.png" sizes="(max-width: 1080px) 1080px, (max-width: 800px) 800px, (max-width: 560px) 560px" 
+                        srcset="assets/instagram-small.png 560w, assets/instagram-medium.png 800w, assets/instagram.png 1080w">
+                        <p class="bold txt-center">Instagram</p>
+                        <p>
+                            Instagram offers both a PWA and its native app. With its PWA, you can access the same features from the desktop and mobile apps and get the 
+                            same user experience with instant loading times, push notifications, and fast responses.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- divider -->
+            <hr>
+
+            <section id="pros-and-cons" class="center">
+                <h2>Pros & Cons</h2>
+                <h3>The Pros</h3>
+
+                <div class="row">
+                    <div class="column">
+                        <p class="bold txt-center">Low on data usage</p>
+                        <p>
+                            PWAs are much smaller than mobile apps, so they require less bandwidth thanks to the caching explained above. This helps those on limited data 
+                            plans who can’t connect to a reliable Wi-Fi network.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bold txt-center">App Store Independent</p>
+                        <p>
+                            There’s no need to place these apps on the App Store or Google Play Store. This frees developers from fees and allows them to create any app 
+                            they want without being subject to an app store’s policies and restrictions.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bold txt-center">Better engagement with users</p>
+                        <p>
+                            With more platforms supported, there are higher conversion rates and users are likely to stay longer, improving user satisfaction and 
+                            experience.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bold txt-center">Cost-Effective</p>
+                        <p>
+                            These are more budget-friendly to develop and maintain since they use a single codebase that works on multiple devices. With that, this makes 
+                            them easier to make and maintain than mobile apps.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bold txt-center">Visibility by search engines</p>
+                        <p>
+                            Google indexes PWAs and makes them accessible online. So you can optimize your search engine ranking as you would with a website to reach 
+                            customers with organic searching and make your business more credible.
+                        </p>
+                    </div>
+                </div>
+
+                <h3>The Cons</h3>
+
+                <div class="row">
+                    <div class="column">
+                        <p class="bold txt-center">Limited offline use</p>
+                        <p>
+                            While you can use PWAs offline, they still depend on web browser connection. If you access the PWA without an internet connection, you can 
+                            still access and navigate through the cached pages, but you can’t experience the entire functionality.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bold txt-center">Issues with compatibility for iOS</p>
+                        <p>
+                            You can access PWAs with iOS 11.3 or newer. However, this leaves older devices out of the picture. In addition, Apple doesn’t allow PWAs 
+                            features like Touch ID, Face ID, Bluetooth, or battery information.
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bold txt-center">Issues with legacy devices</p>
+                        <p>Older mobile devices with outdated browsers miss out on PWAs too. This may lead to some customer complaints for some businesses.</p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bold txt-center">Can’t do everything mobile apps can do</p>
+                        <p>
+                            While PWAs are like mobile apps, they have limitations, since they are written in JavaScript. Meaning they are less efficient in battery and 
+                            don’t perform as well as native apps. But as mentioned above, they may not have access to all the features that native apps provide.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- divider -->
+            <hr>
+
+            <section id="getting-started" class="center">
+                <h2>Getting Started & The Possibilities</h2>
+
+                <div class="row">
+                    <p class="column">
+                        You can achieve creating a PWA in different ways, depending on your objectives. But to make a unique, optimized, and well-made PWA, you need to 
+                        put a lot of investment into it. <a href="https://www.pwabuilder.com" target="_blank">Microsoft’s PWA Builder</a> can help get a basic PWA going.
+                    </p>
+
+                    <img alt="" class="column" src="assets/microsoft-pwa-builder.png" sizes="(max-width: 1280px) 1280px, (max-width: 800px) 800px, (max-width: 560px) 560px" 
+                    srcset="assets/microsoft-pwa-builder-small.png 560w, assets/microsoft-pwa-builder-medium.png 800w, assets/microsoft-pwa-builder.png 1280w">
+                </div>
+
+                <div class="row">
+                    <p>There are some basic steps to get started:</p>
+                    <ol>
+                        <li>Obtaining an SSL certificate to place on your web server.</li>
+                        <li>Developing an app shell.</li>
+                        <li>Verifying if the browser supports service workers.</li>
+                        <li>Creating service workers.</li>
+                        <li>Adding push notifications and web app manifest.</li>
+                        <li>Setting up an install prompt.</li>
+                        <li>Testing the app and its performance.</li>
+                        <li>Launching the app.</li>
+                    </ol>
+
+                    <p>
+                        But to do this task well, you’ll need a team of very-skilled frontend developers who can make complex web apps. You’ll also need designers who 
+                        understand native app user experience and can apply it well online.
+                    </p>
+
+                    <p class="break">
+                        The cost to build depends on the complexity of the app. If you’re looking to convert a site into a PWA, expert Andrew Buck roughly estimated that 
+                        it can take at least a few months and cost $20,000 to $50,000 if you want to get a great result.
+                    </p>
+
+                    <p>
+                        Again, this depends on the complexity required and even simple PWAs can serve great to users. Not only that, they can also pay for themselves in 
+                        the long run with the benefits provided.
+                    </p>
+
+                    <p class="break">You can also turn a WordPress site into a PWA with some WordPress plugins.</p>
+
+                    <p>
+                        You might also benefit from building both PWAs and native apps. That way, you can create a PWA to serve your mobile website users and a native app 
+                        to serve mobile users who keep returning to your business.
+                    </p>
+
+                    <p class="break">
+                        But a PWA is not a replacement for native apps, but an app that can provide a better web experience for your users and help benefit businesses 
+                        overall. In general, this brings great possibilities for businesses to present themselves in the mobile world.
+                    </p>
+                </div>
+            </section>
+
+            <!-- divider -->
+            <hr>
+        </main>
+
+        <footer class="center">
+            <div class="row">
+                <section class="footer-col column">
+                    <h3>Article Sources</h3>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps" target="_blank">Progressive Web Apps (Firefox)</a></li>
+                        <li><a href="https://www.divante.com/reports/pwabook/features-of-progressive-web-apps" target="_blank">Features of Progressive Web Apps (divante.com)</a></li>
+                        <li><a href="https://magenest.com/en/progressive-web-apps-features/" target="_blank">Progressive Web App Features (magenest.com)</a></li>
+                        <li><a href="https://www.mobiloud.com/blog/progressive-web-app-examples" target="_blank">Progressive Web App Examples (mobiloud.com)</a></li>
+                        <li>
+                            <a href="https://brainhub.eu/library/progressive-web-apps-advantages-disadvantages" target="_blank">Progressive Web Apps Advantages & Disadvantages 
+                            (medium.com)</a>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@julianneagu/pwa-benefits-cost-effective-alternative-to-native-apps-in-2024-a6aea92467ca" target="_blank">PWA Benefits 
+                            (medium.com)</a>
+                        </li>
+                        <li><a href="https://solveit.dev/blog/progressive-web-app-vs-native-app" target="_blank">Progressive Web App vs Native App (solveit.dev)</a></li>
+                        <li><a href="https://www.mobiloud.com/blog/progressive-web-apps" target="_blank">PWAs (mobiloud.com)</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-col column">
+                    <h3>Website Made Possible By</h3>
+                    <ul>
+                        <li><a href="https://www.manning.com/books/css-in-depth" target="_blank">CSS In Depth</a></li>
+                        <li><a href="https://nekocalc.com" target="_blank">nekocalc.com</a></li>
+                        <li><a href="https://img2go.com" target="_blank">img2go.com</a></li>
+                        <li><a href="https://developer.mozilla.org" target="_blank">developer.mozilla.org</a></li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
+
+        <script src="js/menu.js"></script>
+    </body>
+</html>
